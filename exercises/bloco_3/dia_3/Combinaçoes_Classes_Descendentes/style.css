@@ -20,3 +20,11 @@
     text-transform:uppercase;
 }
 
+h1, h3{
+    color: red;
+}
+
+.italic {
+    font-size: 40px;
+    border: 1px solid black;
+}
