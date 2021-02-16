@@ -36,3 +36,11 @@ li{
 li.italic{
     font-weight: 700;
 }
+
+ul.languages li:nth-child(-n+3){
+    color: blue;
+}
+
+.java{
+    background-color: pink;
+}
