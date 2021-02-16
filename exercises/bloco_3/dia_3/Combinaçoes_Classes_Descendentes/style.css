@@ -44,3 +44,31 @@ ul.languages li:nth-child(-n+3){
 .java{
     background-color: pink;
 }
+
+.web-links li{
+    text-decoration: none;
+}
+
+.web-links li:hover:nth-of-type(1){
+    font-weight: bold;   
+    color: orange;
+}
+
+.web-links li:hover:nth-of-type(2){
+    font-weight: bold;   
+    color:green;
+}
+
+.web-links li:hover:nth-of-type(3){
+    font-weight: bold;   
+}
+
+.web-links li:hover:nth-of-type(4){
+    font-weight: bold;   
+    color: yellow
+}
+.web-links li:hover:nth-of-type(5){
+    font-weight: bold;   
+    color: rgb(1, 41, 1);
+}
+
