@@ -45,30 +45,31 @@ ul.languages li:nth-child(-n+3){
     background-color: pink;
 }
 
-.web-links li{
+.web-links{
     text-decoration: none;
 }
 
-.web-links li:hover:nth-of-type(1){
-    font-weight: bold;   
-    color: orange;
+#stack.web-links:hover {
+    font-weight: bold;
+    color: orange;    
 }
 
-.web-links li:hover:nth-of-type(2){
-    font-weight: bold;   
-    color:green;
+#w3.web-links:hover {
+    font-weight: bold;
+    color: rgb(4, 248, 4);       
 }
 
-.web-links li:hover:nth-of-type(3){
-    font-weight: bold;   
+#mozilla.web-links:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0);       
 }
 
-.web-links li:hover:nth-of-type(4){
-    font-weight: bold;   
-    color: yellow
-}
-.web-links li:hover:nth-of-type(5){
-    font-weight: bold;   
-    color: rgb(1, 41, 1);
+#devdocs.web-links:hover {
+    font-weight: bold;
+    color: rgb(232, 248, 4);       
 }
 
+#trybe.web-links:hover {
+    font-weight: bold;
+    color: rgb(2, 100, 2);       
+}
