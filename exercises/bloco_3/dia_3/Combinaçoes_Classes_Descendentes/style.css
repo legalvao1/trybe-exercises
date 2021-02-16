@@ -24,7 +24,15 @@ h1, h3{
     color: red;
 }
 
-.italic {
+h1.italic {
     font-size: 40px;
     border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li.italic{
+    font-weight: 700;
 }
