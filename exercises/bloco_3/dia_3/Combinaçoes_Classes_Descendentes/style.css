@@ -45,31 +45,31 @@ ul.languages li:nth-child(-n+3){
     background-color: pink;
 }
 
-.web-links{
+a {
     text-decoration: none;
 }
 
-#stack.web-links:hover {
+#stack:hover {
     font-weight: bold;
     color: orange;    
 }
 
-#w3.web-links:hover {
+#w3:hover {
     font-weight: bold;
     color: rgb(4, 248, 4);       
 }
 
-#mozilla.web-links:hover {
+#mozilla:hover {
     font-weight: bold;
     color: rgb(0, 0, 0);       
 }
 
-#devdocs.web-links:hover {
+#devdocs:hover {
     font-weight: bold;
     color: rgb(232, 248, 4);       
 }
 
-#trybe.web-links:hover {
+#trybe:hover {
     font-weight: bold;
     color: rgb(2, 100, 2);       
 }
