@@ -1,0 +1,15 @@
+h1 ,p {
+    text-align: center;
+}
+
+li:hover{
+    background-color: coral;
+}
+
+li:active{
+    color: cornflowerblue;
+}
+
+ul, ol{
+    list-style: none;
+}
