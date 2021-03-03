@@ -1,12 +1,12 @@
 body{
-    background-color: #00b4d8;
+    background-image: url(stomatopoda.jpg);
     margin: 0;
     padding: 0;
 }
 
 header{
     background-color: #264653;
-    color: #48cae4;
+    color: white;
     padding: 1px;
     text-align: center;
 }
@@ -15,7 +15,7 @@ nav{
     line-height: 40px;
 }
 nav a{
-    color: #48cae4;
+    color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 15px;
@@ -24,30 +24,54 @@ nav a{
 }
 
 article{
-    background-color: #caf0f8;
+    color: white;
     margin-left: 10%;
     margin-right: 10%;
-    border: 1px solid #3d405b;    
+    border: 1px solid #3d405b;  
+    background-color: #000005;  
 }
+
+table{
+    width: 20px;
+    margin-left: 65%;
+}
+
+table, tr{
+    text-align: center;
+    font-size: 15px;
+}
+
 
 section{
     display: block;
 }
 
-section article img{
-    width: 5%;
-    display: inline-block;
-    text-align: right;
+article section img{
+    width: 20%;
+    display:inline-block;
+    text-align:right;
 
 }
 
-section article table{
-    text-align: justify;
-    display: inline-block;
-    width: 20%;
+#description{
+    width: 15%;
 }
 
 section p{
     float: left;
     text-align: justify;
+    width: 70%;
+    margin: 15px;
+}
+
+aside p {
+    width: 50%;
+    display:inline-block;
+    margin-top: -230px;
+    margin-left: 18px;
+}
+
+article aside{
+    text-align: right;
+    display:inline-block;
 }
