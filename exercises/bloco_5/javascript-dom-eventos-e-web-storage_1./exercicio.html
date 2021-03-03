@@ -51,6 +51,15 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       function alteraTexto(elemento){
+         let elementosTag = document.getElementsByTagName(elemento);
+         for (let i = 0; i < elementosTag.length; i += 1) {
+           elementosTag[i].innerText = "Me vejo como uma desenvolvedor fullstack atuando no mercado de trabalho."
+         }
+         return elementosTag;
+       }
+
+       console.log(alteraTexto('p'))
     </script>
   </body>
 </html>
