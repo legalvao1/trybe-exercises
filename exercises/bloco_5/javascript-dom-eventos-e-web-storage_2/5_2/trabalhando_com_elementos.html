@@ -127,6 +127,17 @@
     h3 = document.createElement('h3');
     main.appendChild(h3);
 
+    //Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+    //1.Adicione a classe title na tag h1 criada;
+    h1.className = 'title';
+
+    //2.Adicione a classe description nas 3 tags h3 criadas;
+    h3.className = 'description';
+
+    //3.Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+    document.querySelector('.main-content').firstElementChild.nextElementSibling.remove('.left-content')
+
+
     </script>
   </body>
 </html>
