@@ -76,7 +76,12 @@
      centerContent.className = 'center-content'
      main.appendChild(centerContent);
 
-     
+    // 4.Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+     document.querySelector('.center-content')
+     let p = document.createElement('p');
+     p.innerText = 'Adicionando a tag p dentro da div criada no passo 3'
+     centerContent.appendChild(p);
+
 
     </script>
   </body>
