@@ -144,6 +144,17 @@
 
     centerContent.style.backgroundColor = 'green';
 
+    //6.Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+   
+    let elementoItens = document.querySelectorAll('li');
+    for (let e = 0; e < elementoItens.length; e += 1){
+        let elemento = elementoItens[e];
+        console.log(elemento);
+        if (elemento.innerText.includes('Nove') || elemento.innerText.includes('Dez')) {
+        listaNaoOrdenada.removeChild(elemento);
+        }
+    }
+    
 
     </script>
   </body>
