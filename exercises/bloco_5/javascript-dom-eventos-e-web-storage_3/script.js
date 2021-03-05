@@ -23,8 +23,17 @@ function createDaysOfTheWeek() {
     for (let index = 0; index < dezDaysList.length; index += 1){
       const days = dezDaysList[index];
       const dezDaysListItem = document.createElement('li')
-      dezDaysListItem.id = 'day'
       dezDaysListItem.innerHTML = days;
+
+      if (days === 24 || days === 31){
+        dezDaysListItem.className = 'day holiday';
+      } else if (days === 4 || days === 11 || days === 18 ){
+        dezDaysListItem.className += 'day friday';
+      } else if (days === 25){
+        dezDaysListItem.className += 'day holiday friday';
+      }else {
+        dezDaysListItem.className += 'day';
+      }
 
       dezDays.appendChild(dezDaysListItem);
     };
