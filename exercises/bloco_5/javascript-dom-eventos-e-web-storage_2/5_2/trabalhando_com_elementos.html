@@ -101,6 +101,25 @@
     leftContent.appendChild(imagem)
     imagem.src = ' https://picsum.photos/200 ';
 
+    //8.Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    document.querySelector('.right-Content');
+    let listaNaoOrdenada = document.createElement('ul');
+    rightContent.appendChild(listaNaoOrdenada);
+    
+    let numeroDeItens = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco','Seis','Sete','Oito', 'Nove', 'Dez'];
+    listaNaoOrdenada = document.querySelector('ul');
+
+    for (let i = 0; i < numeroDeItens.length; i += 1){
+        let itens = numeroDeItens[i];
+
+        let itensDaLista = document.createElement('li');
+        itensDaLista.innerHTML = itens;
+
+        listaNaoOrdenada.appendChild(itensDaLista);
+    }
+
+
+
     </script>
   </body>
 </html>
