@@ -136,3 +136,15 @@ function creatTask(string) {
 }
 
 creatTask('Estudar')
+
+//Exercício 8:
+function corDaTarefa (cor){
+    let minhasTarefas = document.querySelector('.my-tasks');
+    let tarefaCor = document.createElement('div');
+    tarefaCor.className = 'task';
+    tarefaCor.style.backgroundColor = cor;
+    
+    minhasTarefas.appendChild(tarefaCor);
+}
+
+corDaTarefa('green');
