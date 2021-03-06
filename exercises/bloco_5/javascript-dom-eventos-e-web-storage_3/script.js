@@ -148,3 +148,19 @@ function corDaTarefa (cor){
 }
 
 corDaTarefa('green');
+
+//Exercício 9:
+
+function tarefaSelecionada(){
+    let tarefa = document.querySelector('.task');
+
+    tarefa.addEventListener('click', function(){
+        if (tarefa.className ==='task selected'){
+            console.log(tarefa.className = 'task');
+        } else {
+            console.log(tarefa.className = 'task selected');
+        }
+    })
+}
+
+tarefaSelecionada();
