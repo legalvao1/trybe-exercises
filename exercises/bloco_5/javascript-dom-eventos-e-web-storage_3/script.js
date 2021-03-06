@@ -49,7 +49,26 @@ function createDaysOfTheWeek() {
     holidayButton.id = 'btn-holiday';
     holidayButton.innerHTML = buttonName;
     buttonsContainer.appendChild(holidayButton);
-    
+
   };
 
   createHolidayButton('Feriados');
+
+  //Exercício 3
+function feriados(){
+    let feriado = document.querySelectorAll('.holiday');
+    let botaoferiado = document.querySelector('#btn-holiday');
+    let corDeFundo = 'rgb(238,238,238)';
+    let novaCor = 'white';
+
+    botaoferiado.addEventListener('click', function(){
+      for (let i = 0; i < feriado.length; i += 1){
+          if (feriado[i].style.backgroundColor === novaCor){
+            feriado[i].style.backgroundColor = corDeFundo;
+          } else {
+            feriado[i].style.backgroundColor = novaCor;
+          }
+      }
+    });
+}
+feriados();
