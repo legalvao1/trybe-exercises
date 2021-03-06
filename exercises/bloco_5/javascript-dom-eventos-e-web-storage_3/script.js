@@ -105,3 +105,25 @@ function botaoSextou(array){
 }
 let sextasFeiras = [4, 11, 18, 25]  // tem que passar esses array
 botaoSextou(sextasFeiras);
+
+//Exercício 6:
+
+function mouseSobre(){
+  let dia = document.querySelector('#days');
+  dia.addEventListener('mouseover', function(evento) {
+    evento.target.style.fontSize = '30px';
+  })
+};
+
+function mouseFora(){
+  let dia = document.querySelector('#days');
+  dia.addEventListener('mouseout', function(evento){
+    evento.target.style.fontSize = '20px'
+  })
+};
+
+mouseSobre();
+mouseFora();
+
+
+
