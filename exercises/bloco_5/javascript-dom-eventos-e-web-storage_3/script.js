@@ -72,3 +72,15 @@ function feriados(){
     });
 }
 feriados();
+
+//Exercício 4:
+
+function createFridayButton(string){
+    let buttonContainer = document.querySelector('.buttons-container');
+    let fridayButtom = document.createElement('button');
+    fridayButtom.id = 'btn-friday';
+    fridayButtom.innerHTML = string;
+    buttonContainer.appendChild(fridayButtom);
+}
+
+createFridayButton('Sexta-feira');
