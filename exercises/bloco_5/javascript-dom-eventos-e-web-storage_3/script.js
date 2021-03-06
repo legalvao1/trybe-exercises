@@ -125,5 +125,14 @@ function mouseFora(){
 mouseSobre();
 mouseFora();
 
+//Exercício 7:
 
+function creatTask(string) {
+    let minhasTarefas = document.querySelector('.my-tasks');
+    let tarefa = document.createElement('span');
+    tarefa.innerHTML = string;
 
+    minhasTarefas.appendChild(tarefa);
+}
+
+creatTask('Estudar')
