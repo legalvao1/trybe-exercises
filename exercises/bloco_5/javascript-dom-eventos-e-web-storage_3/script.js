@@ -84,3 +84,24 @@ function createFridayButton(string){
 }
 
 createFridayButton('Sexta-feira');
+
+//Exercício 5:
+
+function botaoSextou(array){
+    let sexta = document.querySelectorAll('.friday');
+    let botaoSextou = document.querySelector('#btn-friday');
+    let sextou = 'Sextouuuu'
+
+
+    botaoSextou.addEventListener('click', function(){
+        for (let i = 0; i < sexta.length; i += 1) {
+            if(sexta[i].innerHTML === sextou) {
+                sexta[i].innerHTML = sextasFeiras[i];
+            } else {
+                sexta[i].innerHTML = sextou;
+            }
+        }
+    })
+}
+let sextasFeiras = [4, 11, 18, 25]  // tem que passar esses array
+botaoSextou(sextasFeiras);
