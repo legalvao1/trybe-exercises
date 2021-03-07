@@ -164,3 +164,24 @@ function tarefaSelecionada(){
 }
 
 tarefaSelecionada();
+
+//Exercício 10:
+
+function adicionandoCorAoDia(){
+    let dias = document.querySelector('#days');
+    let tarefas = document.querySelector ('.task');
+    let tarefaSelecionada = document.getElementsByClassName('task selected');
+    let corDasTarefas = tarefas.style.backgroundColor;
+
+    dias.addEventListener('click', function (evento){
+        let corDoEvento = evento.target.style.backgroundColor;
+        if (tarefaSelecionada.length > 0 && corDoEvento !== corDasTarefas){
+            let cor = tarefaSelecionada[0].style.backgroundColor;
+            evento.target.style.backgroundColor = cor;
+        } else if (corDoEvento === corDasTarefas && tarefaSelecionada.length !== 0){
+            evento.target.style.color = 'rgb(119,119,119)';
+        }
+    });
+};
+
+adicionandoCorAoDia();
