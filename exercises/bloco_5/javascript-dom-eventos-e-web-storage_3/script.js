@@ -168,20 +168,50 @@ tarefaSelecionada();
 //Exercício 10:
 
 function adicionandoCorAoDia(){
-    let dias = document.querySelector('#days');
-    let tarefas = document.querySelector ('.task');
-    let tarefaSelecionada = document.getElementsByClassName('task selected');
-    let corDasTarefas = tarefas.style.backgroundColor;
+    let dias = document.querySelector('#days'); // pego elem do id dia
+    let tarefas = document.querySelector ('.task'); // pego elem da classe
+    let tarefaSelecionada = document.getElementsByClassName('task selected'); // pego os elem classe
+    let corDasTarefas = tarefas.style.backgroundColor; // atribuo a cor de fundo das tarefas a uma variavel
 
-    dias.addEventListener('click', function (evento){
-        let corDoEvento = evento.target.style.color;
-        if (tarefaSelecionada.length > 0 && corDoEvento !== corDasTarefas){
-            let cor = tarefaSelecionada[0].style.backgroundColor;
-            evento.target.style.color = cor;
-        } else if (corDoEvento === corDasTarefas && tarefaSelecionada.length !== 0){
-            evento.target.style.color = 'rgb(119,119,119)';
+    dias.addEventListener('click', function (evento){ // adiciono o evento de click para os dias 
+        let corDoEvento = evento.target.style.color;  // variavel que vai receber a cor do evento
+        if (tarefaSelecionada.length > 0 && corDoEvento !== corDasTarefas){ // verifico se há taks selected e a cor atribuida
+            let cor = tarefaSelecionada[0].style.backgroundColor; // variavel que recebera a cor de fundo da tarefa
+            evento.target.style.color = cor; // atribuindo cor de fundo ao evento 
+        } else if (corDoEvento === corDasTarefas && tarefaSelecionada.length !== 0){// se cor do evento for igual a da
+            evento.target.style.color = 'rgb(119,119,119)';// tarefa e não houver tarefa selecionada atribuo a cor padrão.
         }
     });
 };
 
 adicionandoCorAoDia();
+
+// Bônus:
+
+function adicionaCompromisso(){
+  let caixaTexto = document.querySelector('#task-input')
+  let botaoAdicionar = document.querySelector('#btn-add')
+  let listaDeCompromissos = document.querySelector('.task-list')
+  
+
+  botaoAdicionar.addEventListener('click', function(){
+    if (caixaTexto.value.length === 0){
+      alert('Erro! Campo Vazio')
+    }
+    let listItem = document.createElement('li')
+    listItem.innerHTML = caixaTexto.value;
+    listaDeCompromissos.appendChild(listItem);
+    caixaTexto.value = ''
+  })
+
+  caixaTexto.addEventListener('keyup', function(evento){
+    if (evento.keyCode === 13 && caixaTexto.value !== 0) {
+      let listItem = document.createElement('li');
+      listItem.innerHTML = caixaTexto.value;
+
+      listaDeCompromissos.appendChild(listItem);
+      caixaTexto.value = ''
+    }
+  })
+}
+adicionaCompromisso()
