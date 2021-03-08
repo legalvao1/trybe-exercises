@@ -174,10 +174,10 @@ function adicionandoCorAoDia(){
     let corDasTarefas = tarefas.style.backgroundColor;
 
     dias.addEventListener('click', function (evento){
-        let corDoEvento = evento.target.style.backgroundColor;
+        let corDoEvento = evento.target.style.color;
         if (tarefaSelecionada.length > 0 && corDoEvento !== corDasTarefas){
             let cor = tarefaSelecionada[0].style.backgroundColor;
-            evento.target.style.backgroundColor = cor;
+            evento.target.style.color = cor;
         } else if (corDoEvento === corDasTarefas && tarefaSelecionada.length !== 0){
             evento.target.style.color = 'rgb(119,119,119)';
         }
