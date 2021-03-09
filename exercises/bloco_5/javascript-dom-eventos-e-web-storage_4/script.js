@@ -44,3 +44,29 @@ font2.addEventListener('click', function(){
 font3.addEventListener('click', function(){
     localStorage.setItem('corDaFonte', document.body.style.color = '#e76f51')
 });
+// TAMANHO DA FONTE ------------------------------------------------------------------------------------
+let fontSizeContainer = document.querySelector(".font-size-container")
+let fontsize1 = document.createElement('div');
+fontsize1.style.width = '25px';
+fontsize1.style.height = '25px';
+fontSizeContainer.appendChild(fontsize1);
+let fontsize2 = document.createElement('div');
+fontsize2.style.width = '35px';
+fontsize2.style.height = '35px';
+fontSizeContainer.appendChild(fontsize2);
+let fontsize3 = document.createElement('div');
+fontsize3.style.width = '45px';
+fontsize3.style.height = '45px';
+fontSizeContainer.appendChild(fontsize3);
+
+fontsize1.addEventListener('click', function(){
+    localStorage.setItem('tamanhoDaFonte', document.body.style.fontSize = '15px')
+});
+
+fontsize2.addEventListener('click', function(){
+    localStorage.setItem('tamanhoDaFonte', document.body.style.fontSize = '18px')
+});
+
+fontsize3.addEventListener('click', function(){
+    localStorage.setItem('tamanhoDaFonte', document.body.style.fontSize = '20px')
+});
