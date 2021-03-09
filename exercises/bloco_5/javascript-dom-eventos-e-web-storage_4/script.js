@@ -73,3 +73,27 @@ fontsize2.addEventListener('click', function(){
 fontsize3.addEventListener('click', function(){
     localStorage.setItem('tamanhoDaFonte', document.body.style.fontSize = '20px')
 });
+
+// ESPAÇAMENTO ENTRE LINHAS------------------------------------------------------------------------------------
+let lines = document.querySelector('.line-container')
+let lineHeight1 =  document.createElement('div');
+lineHeight1.style.height = '5px'
+lines.appendChild(lineHeight1)
+let lineHeight2=  document.createElement('div');
+lineHeight2.style.height = '10px'
+lines.appendChild(lineHeight2)
+let lineHeight3 =  document.createElement('div');
+lineHeight3.style.height = '15px'
+lines.appendChild(lineHeight3)
+
+lineHeight1.addEventListener('click', function(){
+    localStorage.setItem('espaçamentoLinha', document.body.style.lineHeight = '15px')
+});
+
+lineHeight2.addEventListener('click', function(){
+    localStorage.setItem('espaçamentoLinha', document.body.style.lineHeight = '20px')
+});
+
+lineHeight3.addEventListener('click', function(){
+    localStorage.setItem('espaçamentoLinha', document.body.style.lineHeight = '25px')
+});
