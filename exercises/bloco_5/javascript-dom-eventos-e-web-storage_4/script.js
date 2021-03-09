@@ -97,3 +97,29 @@ lineHeight2.addEventListener('click', function(){
 lineHeight3.addEventListener('click', function(){
     localStorage.setItem('espaçamentoLinha', document.body.style.lineHeight = '25px')
 });
+
+// ESTILO DA FONTE -----------------------------------------------------------------------------------
+let fontStyle = document.querySelector('.font-type-container');
+let estiloFonte1 = document.createElement('div');
+estiloFonte1.innerText = 'Monospace'
+fontStyle.appendChild(estiloFonte1);
+let estiloFonte2 = document.createElement('div');
+estiloFonte2.innerText = 'Fantasy'
+estiloFonte2.style.marginLeft = '16%';
+fontStyle.appendChild(estiloFonte2);
+let estiloFonte3 = document.createElement('div');
+estiloFonte3.style.marginLeft = '10%';
+estiloFonte3.innerText = 'Sans-serif'
+fontStyle.appendChild(estiloFonte3);
+
+estiloFonte1.addEventListener('click', function(){
+    localStorage.setItem('estiloDaFonte', document.body.style.fontFamily = 'monospace')
+});
+
+estiloFonte2.addEventListener('click', function(){
+    localStorage.setItem('estiloDaFonte', document.body.style.fontFamily = 'fantasy')
+});
+
+estiloFonte3.addEventListener('click', function(){
+    localStorage.setItem('estiloDaFonte', document.body.style.fontFamily = 'sans-serif')
+});

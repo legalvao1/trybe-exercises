@@ -10,14 +10,14 @@ article {
     float: left;
     border: 1px solid black;
     padding: 5px;
-    width: 60%;
+    width: 74%;
 }
 
 aside {
     float: right;
     border: 1px solid black;
     padding: 5px;
-    width: 38%;
+    width: 24%;
 }
 
 aside div{
@@ -48,7 +48,6 @@ footer {
   
   .line-container div {
     border: 1px solid black;
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: inline-block;
     height: 35px;
@@ -57,3 +56,12 @@ footer {
     width: 35px;
     background-color: aliceblue;
   }
+
+  .font-type-container div {
+    display: inline-block;
+    height: 35px;
+    margin-left: 10px;
+    vertical-align:auto;
+    width: 35px;
+  }
+
