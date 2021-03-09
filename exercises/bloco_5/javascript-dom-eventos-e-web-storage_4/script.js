@@ -2,6 +2,7 @@
 let backgoundColor = document.querySelector('.background-container');
 let cor1 = document.createElement('div');
 cor1.style.backgroundColor = '#f8ad9d';
+cor1.style.marginLeft = '10%';
 backgoundColor.appendChild(cor1);
 let cor2 = document.createElement('div');
 cor2.style.backgroundColor = '#ffd7ba';
@@ -25,6 +26,7 @@ cor3.addEventListener('click',function(){
 let fontColor = document.querySelector('.cor-texto-container');
 let font1 = document.createElement('div');
 font1.style.backgroundColor = 'black'
+font1.style.marginLeft = '11%';
 fontColor.appendChild(font1);
 let font2 = document.createElement('div');
 font2.style.backgroundColor = '#fb8500'
@@ -47,6 +49,7 @@ font3.addEventListener('click', function(){
 // TAMANHO DA FONTE ------------------------------------------------------------------------------------
 let fontSizeContainer = document.querySelector(".font-size-container")
 let fontsize1 = document.createElement('div');
+fontsize1.style.marginLeft = '5%';
 fontsize1.style.width = '25px';
 fontsize1.style.height = '25px';
 fontSizeContainer.appendChild(fontsize1);

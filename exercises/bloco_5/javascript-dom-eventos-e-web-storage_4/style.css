@@ -10,14 +10,20 @@ article {
     float: left;
     border: 1px solid black;
     padding: 5px;
-    width: 69%;
+    width: 60%;
 }
 
 aside {
     float: right;
     border: 1px solid black;
     padding: 5px;
-    width: 29%;
+    width: 38%;
+}
+
+aside div{
+    margin:auto;
+    
+;
 }
 
 footer {
