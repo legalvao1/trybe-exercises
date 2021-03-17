@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center ">Formulário</h1>
+    <form action="" id="myForm" method="GET" enctype="multipart/form-data" class="p-3 mb-2 bg-light text-dark needs-validation" >
+        <div class="row g-3 container w-auto p-3" >
+            <div class="col">
+                <label for="name-input" class="form-label ">Nome: 
+                    <input type="text" name="nome" maxlength="40" id="name-input" class="form-control" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback"> Please provide a name.</div>  
+                </label>
+            </div>
+            <div class="col">
+                <label for="input-email" class="form-label">Email: 
+                    <input type="email" name="email" maxlength="50" id="input-email" class="form-control" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback"> Please provide an email.</div>  
+                </label>
+                </label>
+            </div>
+            <div class="col">
+                <label for="input-cpf" class="form-label">CPF: 
+                    <input type="text" name="cpf" maxlength="11" id="input-cpf" class="form-control" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback"> Please provide a valid CPF.</div>  
+                </label>
+            </div>
+            
+            <label for="input-endereco" class="form-label w-100 p-3">Endereço: 
+                 <input type="text" name="endereco" maxlength="200" id="input-endereco" class="form-control"  required>
+                 <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback"> Please provide a valid adress.</div>  
+            </label>
+            
+            <div class="col-md-4 ">
+                <label for="input-cidade" class="form-label">Cidade: 
+                    <input type="text" name="cidade" maxlength="28" id="input-cidade" class="form-control"  required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback"> Please provide a valid city.</div>  
+                </label>
+            </div>
+            <div class="col-md-2 ">
+                <label for="input-estado" class="form-label "> Estado 
+                    <select name="estado" id="input-estado"  class="form-select "  ></select>
+            </div>
+
+            <div class="row mb-3">
+                <p class="col-form-label col-sm-2 pt-0">Moradia: </p>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <label for="tipo-casa"  class="form-check-label">Casa
+                            <input type="radio" name="moradia" id="tipo-casa" class="form-check-input" checked required>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="tipo-apartamento"  class="form-check-label">Apartamento
+                            <input type="radio" name="moradia" id="tipo-apartamento" class="form-check-input" required>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <fieldset class="mb-3">
+            <p>Resumo do currículo: </p>
+            <textarea name="resume" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" placeholder="Escreva aqui seu resumo" class="form-control h-50 d-inline-block"required></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback"> Please tell us about you</div>  
+
+            <label for="cargo-input" class="form-label">Cargo: 
+                <input type="text" name="cargo" maxlength="40" id="cargo-input" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback"> Please provide your .</div>  
+            </label>
+
+            <label for="descricao-cargo-input" class="form-label">Descrição do Cargo: 
+                <input type="text" name="descricao-cargo" maxlength="500" id="descricao-cargo-input" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback"> Please provide your description.</div>  
+            </label>
+
+            <label for="data-input" class="form-label">Data de entrada: 
+                <input type="date" name="data" id="data-input" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback"> Please insert a valid date.</div>  
+            </label>
+       
+        </fieldset>
+
+        <fieldset>
+            <button type="submit" id="enviar-formulario" class="btn btn-primary">Enviar Formulário</button>
+             <button type="button" id="clear-buttom"  class="btn btn-secondary">Limpar Campos</button>
+        </fieldset>
+    </form>
+    <br><br>
+    <div class="curriculo"></div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
