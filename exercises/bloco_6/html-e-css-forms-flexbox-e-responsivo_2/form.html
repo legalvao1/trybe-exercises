@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">    
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-center ">Formulário</h1>
-    <form action="" id="myForm" method="GET" enctype="multipart/form-data" class="p-3 mb-2 bg-light text-dark needs-validation" >
+    <h1 class="text-center">Formulário</h1>
+    <form action="" id="myForm" method="GET" enctype="multipart/form-data" class="p-3 mb-2 bg-light text-dark">
         <div class="row g-3 container w-auto p-3" >
             <div class="col">
                 <label for="name-input" class="form-label ">Nome: 
-                    <input type="text" name="nome" maxlength="40" id="name-input" class="form-control" required>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback"> Please provide a name.</div>  
+                    <input type="text" name="nome" maxlength="40" id="name-input" class="form-control" data-validate-field="name" required>
                 </label>
             </div>
             <div class="col">
                 <label for="input-email" class="form-label">Email: 
-                    <input type="email" name="email" maxlength="50" id="input-email" class="form-control" required>
+                    <input type="email" name="email" maxlength="50" id="input-email" class="form-control validate" data-validate="required,email"required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback"> Please provide an email.</div>  
                 </label>
@@ -103,8 +101,9 @@
     </form>
     <br><br>
     <div class="curriculo"></div>
-
+    
+    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
     <script src="script.js"></script>
-    <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+   
 </body>
 </html>

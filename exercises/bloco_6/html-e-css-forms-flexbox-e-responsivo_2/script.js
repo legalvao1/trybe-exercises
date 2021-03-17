@@ -70,14 +70,14 @@ const form = document.querySelector('form');
 function renderizaCurriculo(evento){
   evento.preventDefault();  // não deixa o formulário ser submetido
   for (let key in formsElements) {
-    if (checaEmail()){  // verifico se o email é válido
+    // if (checaEmail()){  // verifico se o email é válido
     const resultado = document.createElement('div')
     resultado.innerHTML = formsElements[key].value;
     resultados.appendChild(resultado);
-    }
+    // }
   }
 }
-form.addEventListener('submit',renderizaCurriculo);  // evento no formulario ao submete-lo, assim ele faz as validaçoes
+// form.addEventListener('submit',renderizaCurriculo);  // evento no formulario ao submete-lo, assim ele faz as validaçoes
 //dos campos obrigatórios
 const botaoLimparCampos = document.querySelector('#clear-buttom');
 
@@ -91,4 +91,11 @@ function limpaCampos(){
 }
 
 botaoLimparCampos.addEventListener('click', limpaCampos)
+
+
+new window.JustValidate('#myForm', {
+  messages: {
+      name: 'Campo obrigatório'
+  }
+});
 
