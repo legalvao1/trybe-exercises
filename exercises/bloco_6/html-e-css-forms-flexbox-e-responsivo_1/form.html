@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="" id="myForm" method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <label for="name-input">Nome: 
+                <input type="text" name="nome" maxlength="40" id="name-input" required>
+            </label>
+
+            <label for="input-email">Email: 
+                <input type="email" name="email" maxlength="50" id="input-email" required>
+            </label>
+
+            <label for="input-cpf">CPF: 
+                <input type="text" name="cpf" maxlength="11" id="input-cpf" required>
+            </label>
+            <br><br>
+            <label for="input-endereco">Endereço: 
+                <input type="text" name="endereco" maxlength="200" id="input-endereco" required>
+            </label>
+
+            <label for="input-cidade">Cidade: 
+                <input type="text" name="cidade" maxlength="28" id="input-cidade" required>
+            </label>
+
+            <label for="input-estado"> Estado 
+                <select name="estado" id="input-estado"></select>
+
+            <p>Moradia: </p>
+            <label for="tipo-casa">Casa
+                <input type="radio" name="moradia" id="tipo-casa" checked required>
+            </label>
+
+            <label for="tipo-apartamento">Apartamento
+                <input type="radio" name="moradia" id="tipo-apartamento" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p>Resumo do currículo</p>
+            <textarea name="resume" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" placeholder="Escreva aqui seu resumo" required></textarea>
+
+            <label for="cargo-input">Cargo: 
+                <input type="text" name="cargo" maxlength="40" id="cargo-input" required>
+            </label>
+
+            <label for="descricao-cargo-input">Descrição do Cargo: 
+                <input type="text" name="descricao-cargo" maxlength="500" id="descricao-cargo-input" required>
+            </label>
+
+            <label for="data-input">Data de entrada: 
+                <input type="date" name="data" id="data-input" required>
+            </label>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit" id="enviar-formulario">Enviar Formulário</button>
+             <button type="button" id="clear-buttom">Limpar Campos</button>
+        </fieldset>
+    </form>
+    <br><br>
+    <div class="curriculo"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
