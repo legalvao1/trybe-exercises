@@ -214,4 +214,4 @@ function adicionaCompromisso(){
     }
   })
 }
-adicionaCompromisso()
+adicionaCompromisso();
