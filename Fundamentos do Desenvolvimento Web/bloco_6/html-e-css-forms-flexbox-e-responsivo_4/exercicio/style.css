@@ -13,18 +13,25 @@
     background-color: #5C687C;
     display: flex;
     flex-basis: 268px;
+    justify-content: space-between;
+    
   }
   
   .logo-container {
     display: flex;
     justify-content: center;
     order: 1;
+    flex-grow: 0.1;
+    
   }
   
   .menu-container {
     display: flex;
     flex-basis: 500px;
     order: 2;
+    flex-grow: 1;
+    align-self: center;
+    
   }
   
   .menu-container ul {
