@@ -18,11 +18,13 @@
   .logo-container {
     display: flex;
     justify-content: center;
+    order: 1;
   }
   
   .menu-container {
     display: flex;
     flex-basis: 500px;
+    order: 2;
   }
   
   .menu-container ul {
@@ -38,3 +40,5 @@
     list-style: none;
     margin-right: 10px;
   }
+
+  
