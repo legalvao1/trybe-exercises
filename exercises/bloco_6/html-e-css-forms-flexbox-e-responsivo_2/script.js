@@ -77,7 +77,7 @@ function renderizaCurriculo(evento){
     // }
   }
 }
-// form.addEventListener('submit',renderizaCurriculo);  // evento no formulario ao submete-lo, assim ele faz as validaçoes
+form.addEventListener('submit',renderizaCurriculo);  // evento no formulario ao submete-lo, assim ele faz as validaçoes
 //dos campos obrigatórios
 const botaoLimparCampos = document.querySelector('#clear-buttom');
 
@@ -98,12 +98,33 @@ new window.JustValidate('#myForm', {
       name: 'Campo obrigatório',
       email: 'Campo obrigatório',
       cpf: "Digite um CPF válido",
+      endereco: 'Digite um endereço válido',
+      cidade: 'Digite uma cidade',
+      estado: 'Selecione seu estado',
+      text: 'Fale sobre você',
+      cargo: 'Digite sua função',
+      descricaoCargo: 'Descreva sua função',
   },
   rules:{
     cpf: {
     required: true,
     minLength: 11,
-    } 
+    }, 
+    endereco: {
+      required:true,
+    },
+    cidade: {
+      required: true,
+    },
+    estado: {
+      required: true,
+    },
+    cargo: {
+      required: true,
+    },
+    descricaoCargo: {
+      required: true,
+    },
   }
 });
 

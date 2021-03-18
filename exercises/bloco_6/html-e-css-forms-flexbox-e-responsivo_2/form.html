@@ -30,21 +30,17 @@
             </div>
             
             <label for="input-endereco" class="form-label w-100 p-3">Endereço: 
-                 <input type="text" name="endereco" maxlength="200" id="input-endereco" class="form-control"  required>
-                 <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback"> Please provide a valid adress.</div>  
+                 <input type="text" name="endereco" maxlength="200" id="input-endereco" class="form-control" data-validate-field="endereco"  required>
             </label>
             
             <div class="col-md-4 ">
                 <label for="input-cidade" class="form-label">Cidade: 
-                    <input type="text" name="cidade" maxlength="28" id="input-cidade" class="form-control"  required>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback"> Please provide a valid city.</div>  
+                    <input type="text" name="cidade" maxlength="28" id="input-cidade" class="form-control" data-validate-field="cidade"  required>
                 </label>
             </div>
             <div class="col-md-2 ">
                 <label for="input-estado" class="form-label "> Estado 
-                    <select name="estado" id="input-estado"  class="form-select "  ></select>
+                    <select name="estado" id="input-estado"  class="form-select" data-validate-field="estado"></select>
             </div>
 
             <div class="row mb-3">
@@ -66,26 +62,19 @@
 
         <fieldset class="mb-3">
             <p>Resumo do currículo: </p>
-            <textarea name="resume" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" placeholder="Escreva aqui seu resumo" class="form-control h-50 d-inline-block"required></textarea>
-            <div class="valid-feedback">Looks good!</div>
-            <div class="invalid-feedback"> Please tell us about you</div>  
+            <textarea name="resume" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" placeholder="Escreva aqui seu resumo" class="form-control h-50 d-inline-block" data-validate-field="text" required></textarea>
+       
 
             <label for="cargo-input" class="form-label">Cargo: 
-                <input type="text" name="cargo" maxlength="40" id="cargo-input" class="form-control" required>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback"> Please provide your .</div>  
+                <input type="text" name="cargo" maxlength="40" id="cargo-input" class="form-control" data-validate-field="cargo" required>
             </label>
 
             <label for="descricao-cargo-input" class="form-label">Descrição do Cargo: 
-                <input type="text" name="descricao-cargo" maxlength="500" id="descricao-cargo-input" class="form-control" required>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback"> Please provide your description.</div>  
+                <input type="text" name="descricao-cargo" maxlength="500" id="descricao-cargo-input" class="form-control" data-validate-field="descricaoCargo" required>
             </label>
 
             <label for="data-input" class="form-label">Data de entrada: 
                 <input type="date" name="data" id="data-input" class="form-control" required>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback"> Please insert a valid date.</div>  
             </label>
        
         </fieldset>
