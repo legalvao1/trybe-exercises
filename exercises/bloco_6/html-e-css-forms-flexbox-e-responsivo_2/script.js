@@ -95,7 +95,15 @@ botaoLimparCampos.addEventListener('click', limpaCampos)
 
 new window.JustValidate('#myForm', {
   messages: {
-      name: 'Campo obrigatório'
+      name: 'Campo obrigatório',
+      email: 'Campo obrigatório',
+      cpf: "Digite um CPF válido",
+  },
+  rules:{
+    cpf: {
+    required: true,
+    minLength: 11,
+    } 
   }
 });
 
