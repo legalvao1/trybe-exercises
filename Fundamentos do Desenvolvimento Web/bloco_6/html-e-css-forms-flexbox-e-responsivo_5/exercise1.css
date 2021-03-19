@@ -1,6 +1,6 @@
 body {
     font-size: large;
-    margin: 10px;
+    margin: 25px;
 }
 h1 {
     font-size: 30px;
@@ -17,7 +17,7 @@ figure {
     margin: 20px;
 }
 
-@media screen and (min-width: 501px) and (max-width: 900px) {
+@media screen and (min-width: 501px)  {
     body {
         background-color: aqua;
         font-size: 18px;
@@ -31,9 +31,15 @@ figure {
     }
 
     figure {
-       max-width: 40%;
-       
-    }
+       max-width: 40%;  
+    }   
+}
 
-    
+@media screen and (min-width: 900px)  {
+    body {
+        background-color: orange;
+        font-size: larger;
+        margin: auto;
+        max-width: 800px;
+    }
 }
