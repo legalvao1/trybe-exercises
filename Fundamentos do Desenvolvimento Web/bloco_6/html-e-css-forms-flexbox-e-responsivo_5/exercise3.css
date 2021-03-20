@@ -3,32 +3,32 @@
     width: 100%;
     background: #fff;
   }
-  
+
   #header {
     background: #ccc;
     padding: 20px;
   }
-  
+
   #header h1 {
     margin: 0;
   }
-  
+
   #navigation {
     float: left;
     width: 100%;
     background: #333;
   }
-  
+
   #navigation ul {
     margin: 0;
     padding: 0;
   }
-  
+
   #navigation ul li {
     list-style-type: none;
     display: inline;
   }
-  
+
   #navigation li a {
     display: block;
     float: left;
@@ -37,17 +37,17 @@
     text-decoration: none;
     border-right: 1px solid #fff;
   }
-  
+
   #navigation li a:hover {
     background: #383;
   }
-  
+
   #content-container {
     float: left;
     width: 100%;
     background: #FFF;
   }
-  
+
   #content {
     clear: left;
     float: left;
@@ -56,11 +56,11 @@
     margin: 0 0 0 4%;
     display: inline;
   }
-  
+
   #content h2 {
     margin: 0;
   }
-  
+
   #aside {
     float: right;
     width: 33%;
@@ -68,11 +68,11 @@
     margin: 0 3% 0 0;
     display: inline;
   }
-  
+
   #aside h3 {
     margin: 0;
   }
-  
+
   #footer {
     clear: left;
     background: #ccc;
@@ -82,16 +82,48 @@
   }
 
 @media print {
-    #header, #navigation, #footer {
-        display: none;
-    }
+  #header, #navigation, #footer {
+    display: none;
+  }
 
-    #content-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  #content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    #content {
-        min-width: 100%;
-    }
+  #content {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 240px) and (max-width:320px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#container {
+		width: 360px
+	}
+
+	#header {
+		position: fixed;
+	}
+	#navigation {
+		margin-top: 90px;
+	}
+	#header, #navigation{
+		width: 100%;
+	}
+	#aside {
+		display: none;
+	}
+	img {
+		box-sizing: border-box;
+	}
+	
+	#navigation li a {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
 }
