@@ -8,7 +8,24 @@ html {
     padding: 0;
   }
 
-@media screen and (min-width: 376px) {
+  body {
+      font-size: 16px;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  h2{
+      font-size: 25px;
+  }
+
+  p{
+      text-align: justify;
+      max-width: 100%;
+  }
+
+@media screen and (min-width: 378px) {
     header {
         display: flex;
         flex-direction: column;
@@ -29,7 +46,6 @@ html {
     }
 
     header ul li {
-        
         list-style: none; 
         margin: 0 15px;
     }
@@ -39,18 +55,21 @@ html {
         flex-direction: column;
         margin-bottom: 30px;
     }
+
     .aside-one h2 {
         text-align: center;
-        font-size: x-large;
         background-color: #ffe8d6;
         padding: 15px;
         margin-bottom: 10px
     }
-    
+    .aside-one ul {
+        width: 100%;
+        margin: 15px 55px;   
+        
+    }
     .aside-one li {
-        list-style: none;       
-        padding-left: 15px;
-        padding-bottom: 2px;
+        list-style: none;
+        padding: 10px 0; 
     }
 
     .aside-two {
@@ -69,30 +88,29 @@ html {
 
     .aside-two li {
         list-style: square;
-        margin-left:25px ;
-        padding-bottom: 2px;
+        margin: 10px 45px;
+        padding: 5px 0;
     }
 
     .main-content {
         display: flex;
         flex-direction: column;
-        flex-basis: 80%;
+        flex-basis: 100%;
         margin-top: 20px;
         align-items: center;
     }
 
     .main-content h1 {
-        font-size: 20px;
+        font-size: 18px;
+        padding: 25px 100px;
         text-align: center;
         background-color: #ffe8d6;
-        padding: 45px;
-        margin-bottom: 30px
+        margin-bottom: 100px;
+ 
     }
-
     .main-content p {
         width: 70%;
         text-align: justify;
-    
         padding: 35px 0;
         border-bottom: 1px solid grey;
     }
@@ -106,7 +124,7 @@ html {
     footer h3 {
         background-color: #ffe8d6;
         padding: 15px;
-        margin: 20px 0;
+        margin: 50px 0;
         width: 100%;
         text-align: center;
     }
@@ -115,9 +133,45 @@ html {
         width: 70%;
         text-align: justify;
     }
-
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width:900px){
+    .aside-one ul {
+        width: 100%;
+        margin: 15px 105px;   
+    }
     
+    .aside-one li {
+        list-style: none;
+        padding: 10px 0; 
+    }
+
+    .aside-two li {
+        list-style: square;
+        margin: 10px 95px;
+        padding: 5px 0;
+    }
+
+    .main-content h1 {
+        width: 100%;
+        padding: 15px 105px;
+ 
+    }
+    .main-content p {
+        width: 55%;
+        padding: 35px 0;
+    }
+
+    footer p {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    header p {
+        font-size: xxx-large;
+    }
+    header nav {
+        font-size: x-large;
+    }
 }
