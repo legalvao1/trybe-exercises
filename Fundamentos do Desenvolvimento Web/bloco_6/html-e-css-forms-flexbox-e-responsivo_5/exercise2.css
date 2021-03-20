@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+  
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+@media screen and (min-width: 376px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #ddbea9;
+        padding-bottom: 20px
+    }
+
+    header p {
+        font-size: xx-large;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header ul li {
+        
+        list-style: none; 
+        margin: 0 15px;
+    }
+
+    .aside-one {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .aside-one h2 {
+        text-align: center;
+        font-size: x-large;
+        background-color: #ffe8d6;
+        padding: 15px;
+        margin-bottom: 10px
+    }
+    
+    .aside-one li {
+        list-style: none;       
+        padding-left: 15px;
+        padding-bottom: 2px;
+    }
+
+    .aside-two {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .aside-two h2 {
+        text-align: center;
+        font-size: x-large;
+        background-color: #ffe8d6;
+        padding: 15px;
+        margin-bottom: 10px
+    }
+
+    .aside-two li {
+        list-style: square;
+        margin-left:25px ;
+        padding-bottom: 2px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .main-content h1 {
+        font-size: 20px;
+        text-align: center;
+        background-color: #ffe8d6;
+        padding: 45px;
+        margin-bottom: 30px
+    }
+
+    .main-content p {
+        width: 70%;
+        text-align: justify;
+    
+        padding: 35px 0;
+        border-bottom: 1px solid grey;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h3 {
+        background-color: #ffe8d6;
+        padding: 15px;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer p {
+        width: 70%;
+        text-align: justify;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+}
