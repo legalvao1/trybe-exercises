@@ -1,177 +1,209 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
   
 }
 *, *:before, *:after {
-    box-sizing: inherit;
-    margin: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+  body {
+    font-size: 16px;
+}
+
+  h1 {
+  font-size: 30px;
+}
+
+  h2 {
+    font-size: 25px;
+}
+
+  p {
+    text-align: justify;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 378px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddbea9;
+    padding-bottom: 20px
+	}
+
+  header p {
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+        
+  }
+  header ul{
+    display: flex;
+    justify-content: center;
     padding: 0;
   }
 
-  body {
-      font-size: 16px;
+  header ul li {
+    list-style: none; 
+    margin: 0 15px;
   }
 
-  h1 {
-      font-size: 30px;
+  .aside-one {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 
-  h2{
-      font-size: 25px;
+  .aside-one h2 {
+    text-align: center;
+    background-color: #ffe8d6;
+    padding: 15px;
+    margin-bottom: 10px
   }
-
-  p{
-      text-align: justify;
-      max-width: 100%;
-  }
-
-@media screen and (min-width: 378px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        background-color: #ddbea9;
-        padding-bottom: 20px
-    }
-
-    header p {
-        font-size: xx-large;
-        text-align: center;
-        margin-bottom: 20px;
+  .aside-one ul {
+    width: 100%;
+    margin: 15px 55px;   
         
-    }
-    header ul{
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
+  }
+  .aside-one li {
+    list-style: none;
+    padding: 10px 0; 
+  }
 
-    header ul li {
-        list-style: none; 
-        margin: 0 15px;
-    }
+  .aside-two {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 
-    .aside-one {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
+  .aside-two h2 {
+    text-align: center;
+    font-size: x-large;
+    background-color: #ffe8d6;
+    padding: 15px;
+    margin-bottom: 10px
+  }
 
-    .aside-one h2 {
-        text-align: center;
-        background-color: #ffe8d6;
-        padding: 15px;
-        margin-bottom: 10px
-    }
-    .aside-one ul {
-        width: 100%;
-        margin: 15px 55px;   
-        
-    }
-    .aside-one li {
-        list-style: none;
-        padding: 10px 0; 
-    }
+  .aside-two li {
+    list-style: square;
+    margin: 10px 45px;
+    padding: 5px 0;
+  }
 
-    .aside-two {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-top: 20px;
+    align-items: center;
+  }
 
-    .aside-two h2 {
-        text-align: center;
-        font-size: x-large;
-        background-color: #ffe8d6;
-        padding: 15px;
-        margin-bottom: 10px
-    }
-
-    .aside-two li {
-        list-style: square;
-        margin: 10px 45px;
-        padding: 5px 0;
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        margin-top: 20px;
-        align-items: center;
-    }
-
-    .main-content h1 {
-        font-size: 18px;
-        padding: 25px 100px;
-        text-align: center;
-        background-color: #ffe8d6;
-        margin-bottom: 100px;
+  .main-content h1 {
+    font-size: 18px;
+    padding: 25px 100px;
+    text-align: center;
+    background-color: #ffe8d6;
+    margin-bottom: 100px;
  
-    }
-    .main-content p {
-        width: 70%;
-        text-align: justify;
-        padding: 35px 0;
-        border-bottom: 1px solid grey;
-    }
+  }
+  .main-content p {
+    width: 70%;
+    text-align: justify;
+    padding: 35px 0;
+    border-bottom: 1px solid grey;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    footer h3 {
-        background-color: #ffe8d6;
-        padding: 15px;
-        margin: 50px 0;
-        width: 100%;
-        text-align: center;
-    }
+  footer h3 {
+    background-color: #ffe8d6;
+    padding: 15px;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+  }
 
-    footer p {
-        width: 70%;
-        text-align: justify;
-    }
+  footer p {
+    width: 70%;
+    text-align: justify;
+  }
 }
 
 @media screen and (min-width:900px){
-    .aside-one ul {
-        width: 100%;
-        margin: 15px 105px;   
-    }
+  .aside-one ul {
+    width: 100%;
+    margin: 15px 105px;   
+  }
     
-    .aside-one li {
-        list-style: none;
-        padding: 10px 0; 
-    }
+  .aside-one li {
+    list-style: none;
+    padding: 10px 0; 
+  }
 
-    .aside-two li {
-        list-style: square;
-        margin: 10px 95px;
-        padding: 5px 0;
-    }
+  .aside-two li {
+    list-style: square;
+    margin: 10px 95px;
+    padding: 5px 0;
+  }
 
-    .main-content h1 {
-        width: 100%;
-        padding: 15px 105px;
- 
-    }
-    .main-content p {
-        width: 55%;
-        padding: 35px 0;
-    }
+  .main-content h1 {
+    width: 100%;
+    padding: 15px 105px;
+  }
 
-    footer p {
-        width: 50%;
-    }
+  .main-content p {
+    width: 55%;
+    padding: 35px 0;
+  }
+
+  footer p {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width:1300px) {
-    header p {
-        font-size: xxx-large;
-    }
-    header nav {
-        font-size: x-large;
-    }
+  header p {
+    font-size: xxx-large;
+  }
+  header nav {
+    font-size: x-large;
+  }
+
+  .aside-one h2 {
+    font-size: 30px;
+	}
+
+  .aside-one ul {
+    font-size: 20px;
+  }
+
+  .aside-two h2 {
+    font-size: 30px;
+  }
+
+  .aside-two ul {
+    font-size: 20px;
+  }
+
+  .main-content h1 {
+    font-size: 35px;
+  }
+
+  .main-content p {
+    font-size: 20px;
+  }
+
+  footer h3 {
+    font-size: 30px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
 }
