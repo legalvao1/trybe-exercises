@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+#button {
+    font-size: 40px;
+}
+
+#click-button {
+    font-size: 30px;
+   
+}
