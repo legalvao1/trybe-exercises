@@ -65,15 +65,16 @@ const books = [
 
 const expectedResult = false;
 
-// minha resolução
+// resolução lilo
 function authorUnique() {
-  // escreva seu código aqui
-  let authorUnique = true;
-  let year;
-  books.forEach((book) => {
-    console.log(book.author.birthYear === year ?  authorUnique = false : year = book.author.birthYear);
-  })
-  return authorUnique;
+	let retorno = true;
+	books.find((elementFind) => {
+		books.forEach((element) => {
+			if((element.author.birthYear === elementFind.author.birthYear) && (element.author.name !== elementFind.author.name)) 
+				retorno = false;
+		});
+	});	
+	return retorno;
 }
 
 // // Gabarito
@@ -84,5 +85,5 @@ function authorUnique() {
 //         && (book.author.name !== book.author.name) )    
 //     })
 // }
-
+console.log(authorUnique())
 assert.strictEqual(authorUnique(), expectedResult);
