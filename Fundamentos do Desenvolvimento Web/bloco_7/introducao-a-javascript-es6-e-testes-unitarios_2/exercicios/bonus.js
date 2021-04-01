@@ -38,3 +38,22 @@ const estudantesMatematica = (objeto) => {
 }
 
 estudantesMatematica(allLessons);
+
+const creatReport = (objeto, nome) => {
+  const aulas = Object.values(objeto);
+  const report = {
+    professor: nome,
+    aulas: [],
+    estudantes: 0,
+  }
+  aulas.find((keys) => {
+      if (keys.professor === nome) {
+        report.aulas.push(keys.materia);
+        report.estudantes += keys.numeroEstudantes;
+      }
+    })
+  return report;
+}
+
+console.log(creatReport(allLessons, 'Maria Clara'));
+console.log(creatReport(allLessons, 'Carlos'));
