@@ -1,3 +1,5 @@
+// Essa funcionalidade transforma qualquer função em uma promise. Para começar a usá-la, basta colocar o async antes da definição da função. Agora é só transformar o que é resolve em return e o que é reject em throw e BOOM! Sua promise com async está pronta.
+
 const fetch = require('node-fetch');
 
 async function verifiedFetch(url) {
