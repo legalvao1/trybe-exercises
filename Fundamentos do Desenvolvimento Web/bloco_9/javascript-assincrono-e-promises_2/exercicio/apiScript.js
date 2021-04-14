@@ -9,7 +9,7 @@ const fetchJoke = (url, object) => {
     headers: {'Accept': 'application/json'}
   }//  myObject define o tipo de request method: 'GET' e o formato da resposta headers: { 'Accept': 'application/json' }
   fetch(API_URL, myObject)
-    .then(response => response.json())
+    .then(response => console.log(response.json()))
     .then(data => h2.innerHTML = data.joke);
 };
 
