@@ -1,0 +1,13 @@
+body {
+    
+}
+
+#ipunt-cep {
+    width: 30%;
+}
+
+.cep-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
