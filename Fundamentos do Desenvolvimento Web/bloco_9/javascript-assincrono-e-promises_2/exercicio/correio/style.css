@@ -22,12 +22,19 @@
 
 .coluna-bairro {
     width: 250px;
+    text-align: left;
 }
 
 .coluna-cep {
     width: 130px;
+    text-align: center;
 }
 
 .coluna-uf {
     width: 110px;
+    text-align: center;
+}
+
+.esconde {
+    display: none;
 }

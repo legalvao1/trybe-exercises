@@ -15,16 +15,18 @@
  </div>
   <section id="address-div">
     <form action="" method="" >
-      <div class="search-cep mb-3 container-sm">
-        <h2>Busca CEP</h2>
-        <label class="form-label" for="">Digite um CEP</label>
-        <input  class="form-control "  type="text" name="" id="ipunt-cep">
-      </div>
+      <div class="search-cep-container">
+        <div class="search-cep mb-3 container-sm">
+          <h2>Busca CEP</h2>
+          <label class="form-label" for="">Digite um CEP</label>
+          <input  class="form-control "  type="text" name="" id="ipunt-cep">
+        </div>
+        <div class="container-sm">
+          <button  class="btn btn-primary " type="submit">Buscar</button>
+        </div>
+    </div>
       <div class="container-sm">
-        <button  class="btn btn-primary " type="submit">Buscar</button>
-      </div>
-      <div class="container-sm">
-      <table class="cep-result-empty">
+      <table class="cep-result esconde">
         <thead>
             <tr  class=" table table-primary">
               <th class="col coluna-logradouro" >Logradouro/Nome</th>
@@ -35,6 +37,7 @@
         </thead>
         <tbody></tbody>
       </table>
+      <button class="new-search-button esconde btn btn-primary">Nova busca</button>
     </div>
     </form>
   </section>
