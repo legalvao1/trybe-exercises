@@ -1,6 +1,6 @@
-body {
+/* body {
     
-}
+} */
 
 #ipunt-cep {
     width: 30%;
@@ -10,4 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.cep-result-empty {
+    display: none;    
+}
+
+.coluna-logradouro {
+    width: 450px;
+}
+
+.coluna-bairro {
+    width: 250px;
+}
+
+.coluna-cep {
+    width: 130px;
+}
+
+.coluna-uf {
+    width: 110px;
 }
