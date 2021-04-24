@@ -16,7 +16,7 @@ const creatAdress = ({ bairro, cep, logradouro, uf, localidade }) => {
   const UF = document.createElement('td');
   const CEP = document.createElement('td');
   tr.id = 'linha'
-  table[0].className = "cep-result table table-primary"
+  table[0].className = "cep-result table table-borderless"
   address.innerHTML = logradouro;
   address.className = "coluna-logradouro";
   bairroDistrito.innerHTML = bairro;
@@ -68,6 +68,20 @@ const backTosearchCep = () => {
   serachCepContainer.classList.remove('esconde');
 }
 
+// ** Source http://diego-cipriano.blogspot.com/2010/09/mascaras-javascript-data-cep-cpf-cnpj.html
+function mascara(el){
+  el.value=cep(el.value)
+}
+
+function soNumeros(d){
+  return d.replace(/\D/g,"")
+}
+
+function cep(d){
+  d = soNumeros(d)
+  d=d.replace(/^(\d{5})(\d)/,"$1-$2")
+  return d
+}
 form.addEventListener('submit', recuperaCep);
 // form.addEventListener('submit', hideSearchCep);
 newSearchButton.addEventListener('click', backTosearchCep)
