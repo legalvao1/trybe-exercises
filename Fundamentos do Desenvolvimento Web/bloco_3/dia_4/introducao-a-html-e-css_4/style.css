@@ -1,0 +1,77 @@
+body{
+    background-image: url(stomatopoda.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #264653;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+nav{
+    background-color: #03045e;
+    line-height: 40px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #264653
+}
+
+article{
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #3d405b;  
+    background-color: #000005;  
+}
+
+table{
+    width: 20px;
+    margin-left: 65%;
+}
+
+table, tr{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+section{
+    display: block;
+}
+
+article section img{
+    width: 20%;
+    display:inline-block;
+    text-align:right;
+
+}
+
+#description{
+    width: 15%;
+}
+
+section p{
+    float: left;
+    text-align: justify;
+    width: 70%;
+    margin: 15px;
+}
+
+aside p {
+    width: 50%;
+    display:inline-block;
+    margin-top: -230px;
+    margin-left: 18px;
+}
+
+article aside{
+    text-align: right;
+    display:inline-block;
+}

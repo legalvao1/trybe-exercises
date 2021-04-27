@@ -1,0 +1,60 @@
+
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+            <div id="primeiroFilho"></div>
+            <div id="elementoOndeVoceEsta">
+                <div id="primeiroFilhoDoFilho"></div>
+                <div id="segundoEUltimoFilhoDoFilho"></div>
+            </div>
+            Atenção!
+            <div id="terceiroFilho"></div>
+             <div id="quartoEUltimoFilho"></div>
+        </div>
+    </div>
+    <script>
+
+        //Acesse o elemento elementoOndeVoceEsta .
+        // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+        // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+        // Acesse o primeiroFilho a partir de pai .
+        // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+        // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+        // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+        // Agora acesse o terceiroFilho a partir de pai .//
+        document.querySelector('#primeiroFilhoDoFilho').innerText = 'adicionando texto'
+        document.querySelector("#elementoOndeVoceEsta").parentNode.parentNode.style.color = 'green'
+        document.querySelector('#pai').firstElementChild
+        document.querySelector('#elementoOndeVoceEsta').previousElementSibling
+        document.querySelector('#elementoOndeVoceEsta').nextSibling
+        document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+        document.querySelector('#pai').firstElementChild.nextElementSibling.nextElementSibling
+
+
+        //Crie um irmão para elementoOndeVoceEsta .
+        let pai = document.querySelector('#pai')  // adicionando uma div ao elem pai
+        let agora = document.createElement('div')
+        pai.appendChild(agora)
+
+
+        //Crie um filho para elementoOndeVoceEsta .
+        let elementoOndeVoceEsta = document.querySelector("#elementoOndeVoceEsta")
+        let filhoDele = document.createElement('div')
+        elementoOndeVoceEsta.appendChild(filhoDele)
+
+        //Crie um filho para primeiroFilhoDoFilho .
+        let primeiroFilhoDoFilho= document.querySelector("#primeiroFilhoDoFilho")
+        let filhoDoFilho = document.createElement('div')
+        filhoDoFilho.className = 'filhoDoFilho'  //botar o nome no elemento q to criando
+        primeiroFilhoDoFilho.appendChild(filhoDoFilho)
+
+        //A partir desse filho criado, acesse terceiroFilho .
+        document.querySelector(".filhoDoFilho").parentNode.parentNode.nextElementSibling
+        
+        //Remova todos os elementos da página, menos pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+       document.querySelector('#pai').firstElementChild.remove("#primeiroFilhoDoFilho")
+        
+
+
+    </script>
+</body>
