@@ -1,14 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 class Pokemon extends React.Component {
   render() {
-    const { name, type, averageWeight:{ value, measurementUnit}, image }  = this.props;
+    const { name, type, averageWeight, image }  = this.props.pokemon;
     return (
-      <section>
-          <h2>{ name }</h2>
-          <h3>{ type }</h3>
-          <p>{ value }{ measurementUnit }</p>
-          <img src={ image } alt={ name } />
+      <section className='pokemon'>
+        <div className="image">
+          <div>
+              <h2>{ name }</h2>
+              <p>{ type }</p>
+              <p>{`Average weight: ${ averageWeight.value }${ averageWeight.measurementUnit }`}</p>
+            </div>
+            <div >
+              <img src={ image } alt={ name } />
+            </div>
+          </div>
       </section>
     );
   }
