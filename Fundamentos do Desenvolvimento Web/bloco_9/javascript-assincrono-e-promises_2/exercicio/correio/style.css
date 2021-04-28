@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#ipunt-cep {
+  width: 30%;
+}
+
+.cep-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cep-result-empty {
+  display: none;
+}
+
+thead, th {
+  background-color: #0d6efd;;
+  color:white;
+  border-radius: 10px 10px 0 0;
+}
+
+.coluna-logradouro {
+    width: 450px;
+}
+
+.coluna-bairro {
+  width: 250px;
+  text-align: left;
+}
+
+.coluna-cep {
+  width: 130px;
+  text-align: center;
+}
+
+.coluna-uf {
+  width: 110px;
+  text-align: left;
+}
+
+.esconde {
+  display: none;
+}
+
+header {
+  background-color: yellow;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-left: 50px;
+  width: 70px;
+}
+header h2 {
+  font-family: 'Trebuchet MS', 'arial', 'helvetica', 'Open Sans', sans-serif;
+  color: darkblue;
+  font-weight: 700;
+}
+
+.search-cep, .cep-result-container {
+  margin-top: 55px;
+}
+
+.cep-result-container tbody, thead {
+  align-self: center;
+}
+
+.new-search-button {
+  margin-left: 7%;
+}
+
+tr, th, td {
+  border-radius: 2%;
+}
+
+table {
+  border: none
+}
+
+
+@media screen and (max-width: 769px) {
+  table {
+    padding: 1rem;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0.4rem;
+    margin-bottom: 0.9rem;
+    border-top: 0.3rem solid #0071ad;
+    border-radius: 0.7rem;
+    box-shadow: 0 0.3rem 0.5rem #cacaca;
+    border-collapse: collapse;
+  }
+
+  table tr th {
+    display: none;
+  }
+
+  table tr td {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .coluna-logradouro::before {
+    content: 'Logradouro/Nome';
+    font-size: 15px;
+    font-weight: 600;
+    color: lightgrey;
+  }
+
+  .coluna-bairro::before {
+    content: 'Bairro/Distrito';
+    font-size: 15px;
+    font-weight: 600;
+    color: lightgrey;
+  }
+  .coluna-cep {
+    text-align: left;
+  }
+  
+  .coluna-cep::before {
+    content: 'CEP';
+    font-size: 15px;
+    font-weight: 600;
+    color: lightgrey;
+    text-align: left;
+  }
+  
+  .coluna-uf::before {
+    content: 'Localidade/UF';
+    font-size: 15px;
+    font-weight: 600;
+    color: lightgrey;
+  }
+
+}
