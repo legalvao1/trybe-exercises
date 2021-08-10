@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <title>Redux basic example</title>
+</head>
+<body>
+  <div>
+    Clicked: <span id="value">0</span> times
+    <button id="increment">+</button>
+    <button id="decrement">-</button>
+    <button id="increment-10">Adiciona 10</button>
+    <div>ClickCounts: 
+      <span id="click-count">0</span>
+    </div>
+  </div>
+  <script>
+
+    // CRIANDO O REDUCER
+    const INCREMENT = 'INCREMENT';
+    const DECREMENT = 'DECREMENT';
+
+    function counterReducer(state = { clicks: 0, clickCount: 0 }, action){
+      switch(action.type) {
+        case INCREMENT:
+          return {
+            ...state, // pego o estado anterior e mudo só a chave que eu quero
+            clicks: state.clicks + action.payload.amount,
+            clickCount: state.clickCount + 1,
+          }
+        case DECREMENT:
+          return {
+            ...state,
+            clicks: state.clicks - action.payload.amount,
+            clickCount: state.clickCount + 1,
+          };
+        default: 
+        return state;
+      }
+    }
+
+    // CRIANDO A STORE
+    const store = Redux.createStore(
+      counterReducer, 
+      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // para usar a extensão
+      );
+
+    // PEGANDO OS BOTÕES, ADICIONANDO O EVENTO E A FUNÇÃO ACTION 
+
+    const buttonIncrement = document.getElementById('increment');
+    buttonIncrement.addEventListener('click', () => {
+      const incrementeAction = {
+        type: INCREMENT,
+        payload: {
+          amount: 1
+        }
+      }
+      store.dispatch(incrementeAction); // DISPATCH A ACTION PARA O REDUCER
+    });
+
+    const buttonDecrement = document.getElementById('decrement');
+    buttonDecrement.addEventListener('click', () => {
+      const decrementAction = {
+        type: DECREMENT,
+        payload: {
+          amount: 1
+        }
+      }
+      store.dispatch(decrementAction); // DISPATCH A ACTION PARA O REDUCER
+    });
+
+    const buttonIncrement10 = document.getElementById('increment-10');
+    buttonIncrement10.addEventListener('click', () => {
+      const increment10 = {
+        type: INCREMENT,
+        payload: {
+          amount: 10,
+        }
+      }
+      store.dispatch(increment10); // DISPATCH A ACTION PARA O REDUCER
+    });
+
+
+    //LER O DADO DA STORE GLOBAL E RENDERIZAR NA TELA
+    //A subscription nada mais é do que, uma (ou mais de 1) função que será executada toda vez que uma Action for disparada. No nosso caso, a função que será executada é a de render:
+
+    store.subscribe(() => {
+      const valueSpan = document.getElementById('value');
+      const clickCountsSpan = document.getElementById('click-count');
+      valueSpan.innerHTML = store.getState().clicks;
+      clickCountsSpan.innerHTML = store.getState().clickCount;
+    })
+    
+  </script>
+</body>
+</html>

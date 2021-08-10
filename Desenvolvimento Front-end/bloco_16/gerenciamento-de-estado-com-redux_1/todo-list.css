@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,800');
+
+body, input, button { 
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  margin-top: 10px;
+}
+
+#container {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form {
+  margin-top: 50px;
+}
+
+#input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+#todos-container {
+  margin-top: 30px;
+}
+
+.todo-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 7px;
+  font-weight: 800;
+  color: white;
+}
+
+.button.add {
+  padding: 6px 15px;
+  background: #17aa56;
+  box-shadow: 0 3px #119e4d;
+}
+
+.button.remove {
+  background: #cb4e4e;
+  box-shadow: none;
+  padding: 1px 7px 4px 7px;
+  margin-left: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
