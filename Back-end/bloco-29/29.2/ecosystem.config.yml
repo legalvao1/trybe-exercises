@@ -1,0 +1,12 @@
+apps:
+
+  -name: exercicio
+  script: ./index.js
+  watch: true
+  exec_mode: cluster
+  instances: max
+  max_memory_restart: 100M
+  env_prod:
+    ENVIRONMENT: PRODUCTION
+  env_homolog:
+    ENVIRONMENT: HOMOLOG
