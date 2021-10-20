@@ -1,10 +1,10 @@
 // ./dipExample.js
 
-// const axios = require('axios').default;
-// const fetch = require('node-fetch');
-import axios from 'axios';
+const axios = require('axios').default;
+const fetch = require('node-fetch');
+// import axios from 'axios';
 
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 
 const url = 'https://icanhazdadjoke.com';
 
@@ -34,6 +34,6 @@ const getJokes = (numberOfJokes, jokeRequester = requestWithFetch) => {
   
 getJokes(5, requestWithAxios);
 
-// module.exports = { getJokes };
+module.exports = { getJokes };
 
-export default getJokes;
+// export default getJokes;

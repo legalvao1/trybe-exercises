@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "mocha ./tests/**/*$NAME*.{test,spec}.js --exit",
     "lint": "eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json ."
@@ -21,6 +20,6 @@
   },
   "dependencies": {
     "axios": "^0.22.0",
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^2.6.5"
   }
 }

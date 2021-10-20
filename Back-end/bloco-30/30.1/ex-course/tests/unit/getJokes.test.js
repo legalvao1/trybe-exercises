@@ -1,12 +1,12 @@
 // ./tests/unit/getJokes.test.js
 
-// const { stub } = require('sinon');
-// const { expect } = require('chai');
+const { stub } = require('sinon');
+const { expect } = require('chai');
 
-// const { getJokes } = require('../../dipExample');
-import { stub } from 'sinon';
-import { expect } from 'chai';
-import getJokes from '../../dipExample';
+const { getJokes } = require('../../dipExample');
+// import { stub } from 'sinon';
+// import { expect } from 'chai';
+// import getJokes from '../../dipExample';
 
 const requesterStub = stub();
 
